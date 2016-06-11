@@ -1,0 +1,15 @@
+<ion-view name="login-view" class="login">
+    <ion-content class="padding ">
+        <div class="logo-div">
+            <img src="img/ReTreeLogo.png" alt="ReTree Logo" />
+        </div>
+        <div>
+            <input type="text" placeholder="Email" ng-model="login.data.username" class="primaryInput">
+            <input type="password" placeholder="Contraseña" ng-model="login.data.password" class="primaryInput">
+
+
+
+        </div>
+        <button class="primaryButton" ng-click="login.login(login.data)">Login</button>
+    </ion-content>
+</ion-view>
