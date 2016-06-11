@@ -1,15 +1,43 @@
 <ion-view name="login-view" class="login">
     <ion-content class="padding ">
         <div class="logo-div">
-            <img src="img/ReTreeLogo.png" alt="ReTree Logo" />
+            <img src="img/ReTreeLogo.png" alt="ReTree Logo" width="50%"/>
         </div>
         <div>
-            <input type="text" placeholder="Email" ng-model="login.data.username" class="primaryInput">
-            <input type="password" placeholder="Contraseña" ng-model="login.data.password" class="primaryInput">
-
-
+            <div class="input-div">
+                <input type="text" placeholder="Email" ng-model="login.data.username" class="primaryInput">
+            </div>
+            <div class="input-div">
+                <input type="password" placeholder="Contraseña" ng-model="login.data.password" class="primaryInput">
+            </div>
 
         </div>
-        <button class="primaryButton" ng-click="login.login(login.data)">Login</button>
+        <div class="row">
+            <div class="col col-50">
+                <button class="primaryButton" ng-click="login.login(login.data)">Ingresar</button>
+            </div>
+            <div class="col col-50">
+                <button class="primaryButton" ng-click="login.signup()">Registrarse</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col col-33">
+                <button type="submit" style="border: 0; background: transparent">
+                    <img src="./img/facebook.png" alt="Facebook" width="75%"/>
+                </button>
+            </div>
+            <div class="col col-33">
+                <button type="submit" style="border: 0; background: transparent">
+                    <img src="./img/twitter.png" alt="Twitter" width="75%"/>
+                </button>
+            </div>
+            <div class="col col-33">
+                <button type="submit" style="border: 0; background: transparent">
+                    <img src="./img/google.png" alt="Google" width="75%"/>
+                </button>
+            </div>
+        </div>
+
     </ion-content>
 </ion-view>
