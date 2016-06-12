@@ -4,36 +4,18 @@
 
 (function () {
   var controllerId = 'loginController';
-  angular.module('app').controller(controllerId, [
-    '$scope',
-    '$state',
-    '$ionicPopup',
-    function (
-      $scope,
-      $state,
-      $ionicPopup)
+  angular
+    .module('app')
+        .controller(controllerId, ['$scope', '$state', '$ionicPopup',Login]);
+
+    function Login ($scope, $state, $ionicPopup)
     {
       var vm = this;
 
       vm.data = {};
 
-      vm.login = function login(data) {
-        LoginService.login(data.username, data.password).then(function(authenticated) {
-          $state.go('app.users', {}, {reload: true});
-          $scope.setCurrentUsername(data.username);
-          vm.data={};
-        }, function(err) {
-          var alertPopup = $ionicPopup.alert({
-            title: 'Login failed!',
-            template: 'Please check your credentials!'
-          });
-        });
+      vm.signup = function signup(data) {
+          $state.go('signup');
       };
-
-
-
-
-
     }
-  ])
 })();

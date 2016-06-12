@@ -32,6 +32,12 @@
                 templateUrl: 'app/login/login.html',
                 controller: 'loginController',
                 controllerAs:'login'
+            })
+            .state('signup', {
+                url: '/signup',
+                templateUrl: 'app/signup/signup.html',
+                controller: 'signupController',
+                controllerAs:'signup'
             });
           /*.state('app', {
             url: '/app',
