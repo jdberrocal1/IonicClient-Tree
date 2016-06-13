@@ -3,18 +3,18 @@
         <div class="logo-div">
             <img src="img/ReTreeLogo.png" alt="ReTree Logo" width="60%"/>
         </div>
-        <div>
-            <div class="input-div">
-                <input type="text" placeholder="Email" ng-model="login.data.username" class="primaryInput">
-            </div>
-            <div class="input-div">
-                <input type="password" placeholder="Contraseña" ng-model="login.data.password" class="primaryInput">
-            </div>
+        <form name="loginForm">
+                <div class="input-div">
+                    <input type="text" placeholder="Usuario" ng-model="login.credentials.username" class="primaryInput" required>
+                </div>
+                <div class="input-div">
+                    <input type="password" placeholder="Contraseña" ng-model="login.credentials.password" class="primaryInput" required>
+                </div>
+        </form>
 
-        </div>
         <div class="row">
             <div class="col col-50">
-                <button class="primaryButton" ng-click="login.login(login.data)">Ingresar</button>
+                <button class="primaryButton" ng-click="login.login(login.credentials)" ng-disabled="loginForm.$invalid">Ingresar</button>
             </div>
             <div class="col col-50">
                 <button class="primaryButton" ng-click="login.signup()">Registrarse</button>

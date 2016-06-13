@@ -1,3 +1,83 @@
-<div class="">
-    <h1>i'm here</h1>
-</div>
+<ion-view name="signup-view">
+    <ion-content class="padding ">
+        <div class="logo-div">
+            <h2>Registro</h2>
+            <img src="{{signup.user.img}}" alt="Usuario"/>
+        </div>
+        <form name="signupForm" novalidate="">
+            <div class="list">
+                <label class="item item-input" ng-class="{ 'has-errors' : signupForm.fullname.$invalid &&
+                signupForm.fullname.$dirty, 'no-errors' : signupForm.fullname.$valid}">
+                    <span class="input-label">Nombre</span>
+                    <input type="text" name="fullname" ng-model="signup.user.fullname" ng-minlength="5" ng-maxlength="50"
+                  required class="primaryInput">
+                </label>
+                <div class="error-container" ng-show="signupForm.fullname.$error &&
+                signupForm.fullname.$dirty" ng-messages="signupForm.fullname.$error">
+                    <div ng-messages-include="{{signup.errorTemplate}}"></div>
+                </div>
+
+                <label class="item item-input" ng-class="{ 'has-errors' : signupForm.username.$invalid &&
+                signupForm.username.$dirty, 'no-errors' : signupForm.username.$valid}">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" name="username" ng-model="signup.user.username" ng-minlength="5" ng-maxlength="50"
+                  required class="primaryInput">
+                </label>
+                <div class="error-container" ng-show="signupForm.username.$error &&
+                signupForm.username.$dirty" ng-messages="signupForm.username.$error">
+                    <div ng-messages-include="{{signup.errorTemplate}}"></div>
+                </div>
+
+                <label class="item item-input" ng-class="{ 'has-errors' : signupForm.email.$invalid &&
+                signupForm.email.$dirty, 'no-errors' : signupForm.email.$valid}">
+                    <span class="input-label">Correo</span>
+                    <input type="email" name="email" ng-model="signup.user.email" ng-minlength="5" ng-maxlength="50"
+                  required class="primaryInput">
+                </label>
+                <div class="error-container" ng-show="signupForm.email.$error && signupForm.email.$dirty"
+                ng-messages="signupForm.email.$error">
+                    <div ng-messages-include="{{signup.errorTemplate}}"></div>
+                </div>
+
+                <label class="item item-input" ng-class="{ 'has-errors' : signupForm.phone.$invalid &&
+                signupForm.phone.$dirty, 'no-errors' : signupForm.phone.$valid && signupForm.phone.$dirty}">
+                    <span class="input-label">Telefono</span>
+                    <input type="tel" name="phone" ng-model="signup.phone.email" ng-minlength="5" ng-maxlength="50"
+                  class="primaryInput">
+                </label>
+                <div class="error-container" ng-show="signupForm.phone.$error && signupForm.phone.$dirty"
+                ng-messages="signupForm.phone.$error">
+                    <div ng-messages-include="{{signup.errorTemplate}}"></div>
+                </div>
+
+                <label class="item item-input" ng-class="{ 'has-errors' : signupForm.password.$invalid && signupForm.password.$dirty,
+                'no-errors' : signupForm.password.$valid}">
+                    <span class="input-label">Password</span>
+                    <input type="password" name="password" ng-model="signup.user.password" minlength="5"
+                  maxlength="50" required class="primaryInput">
+                </label>
+                <div class="error-container last-error-container" ng-show="signupForm.password.$error &&
+                signupForm.password.$dirty" ng-messages="signupForm.password.$error">
+                    <div ng-messages-include="{{signup.errorTemplate}}"></div>
+                </div>
+
+                <label class="item item-input" ng-class="{ 'has-errors' :
+                signupForm.repassword.$invalid && signupForm.repassword.$dirty, 'no-errors' :
+                signupForm.password.$valid && signupForm.repassword.$valid}">
+                    <span class="input-label">Confirmar</span>
+                    <input type="password" name="repassword" ng-model="signup.repassword" minlength="5"
+                  maxlength="50" required class="primaryInput" pattern="{{signup.user.password}}">
+                </label>
+                <div class="error-container last-error-container" ng-show="signupForm.repassword.$error &&
+                signupForm.repassword.$dirty" ng-messages="signupForm.repassword.$error">
+                    <div ng-messages-include="{{signup.errorTemplate}}"></div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <button class="primaryButton" ng-click="signup.signup(signup.user)" ng-disabled="signupForm.$invalid"
+        ng-class="{ 'disabled' : signupForm.$invalid}">
+            Guardar
+        </button>
+    </ion-content>
+</ion-view>
