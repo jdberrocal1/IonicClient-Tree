@@ -5,6 +5,9 @@
 .login {
   background: transparent url(../img/forest.jpg) no-repeat 0 0; }
 
+.signup-form {
+  margin-bottom: 10%; }
+
 .primaryInput {
   font-family: "Roboto", sans-serif;
   width: 100%;

@@ -12,7 +12,8 @@
     {
       var vm = this;
 
-      vm.signup = function signup(data) {
+      vm.signup = function signup() {
+          vm.credentials={};
           $state.go('signup');
       };
 

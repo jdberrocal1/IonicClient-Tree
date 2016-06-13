@@ -4,7 +4,7 @@
             <h2>Registro</h2>
             <img src="{{signup.user.img}}" alt="Usuario"/>
         </div>
-        <form name="signupForm" novalidate="">
+        <form name="signupForm" novalidate="" class="signup-form">
             <div class="list">
                 <label class="item item-input" ng-class="{ 'has-errors' : signupForm.fullname.$invalid &&
                 signupForm.fullname.$dirty, 'no-errors' : signupForm.fullname.$valid}">
@@ -73,11 +73,11 @@
                     <div ng-messages-include="{{signup.errorTemplate}}"></div>
                 </div>
             </div>
+            <br>
+            <button class="primaryButton" ng-click="signup.signup(signup.user)" ng-disabled="signupForm.$invalid"
+            ng-class="{ 'disabled' : signupForm.$invalid}">
+                Guardar
+            </button>
         </form>
-        <br>
-        <button class="primaryButton" ng-click="signup.signup(signup.user)" ng-disabled="signupForm.$invalid"
-        ng-class="{ 'disabled' : signupForm.$invalid}">
-            Guardar
-        </button>
     </ion-content>
 </ion-view>
