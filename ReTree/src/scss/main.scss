@@ -5,7 +5,8 @@
 'base/_variables',
 //feature
 'features/_login',
-'features/_signup';
+'features/_signup',
+'features/_dashboard';
 
 .primaryInput {
     font-family: "Roboto", sans-serif;
@@ -39,6 +40,12 @@
   &:hover,&:active,&:focus{
        background: $secondary-color;
   }
+}
+
+.btn-transparent{
+    background-color: transparent;
+    border: 0;
+    font-size: 28px;
 }
 
 .bar, .bar.bar-light{

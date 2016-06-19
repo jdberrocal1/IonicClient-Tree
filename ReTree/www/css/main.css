@@ -1,12 +1,23 @@
 .logo-div {
   text-align: center;
-  margin-bottom: 8%; }
+  margin-bottom: 8%;
+  margin-top: 10%; }
 
 .login {
   background: transparent url(../img/forest.jpg) no-repeat 0 0; }
 
 .signup-form {
   margin-bottom: 10%; }
+
+.userPicture {
+  text-align: center;
+  margin-bottom: 2%; }
+
+.dashboard-tab div {
+  background-color: #e55a1c !important;
+  color: white;
+  top: 0px !important;
+  height: 60px !important; }
 
 .primaryInput {
   font-family: "Roboto", sans-serif;
@@ -37,6 +48,11 @@
   cursor: pointer; }
   .primaryButton:hover, .primaryButton:active, .primaryButton:focus {
     background: #619f42; }
+
+.btn-transparent {
+  background-color: transparent;
+  border: 0;
+  font-size: 28px; }
 
 .bar, .bar.bar-light {
   background-color: transparent;

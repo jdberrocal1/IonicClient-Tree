@@ -11,12 +11,8 @@ gulp.task('web', function (done) {
 });
 
 /*Run Android*/
-gulp.task('android', function (done) {
-  sh.exec('ionic run android --livereload');
-  done();
-});
 
-gulp.task('androidMobile', function (done) {
+gulp.task('android', function (done) {
   sh.exec('ionic run android');
   done();
 });

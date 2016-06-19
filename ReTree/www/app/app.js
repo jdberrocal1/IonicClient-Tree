@@ -38,25 +38,33 @@
                 templateUrl: 'app/signup/signup.html',
                 controller: 'signupController',
                 controllerAs:'signup'
+            })
+            .state('app', {
+                url: '/app',
+                abstract: true,
+                templateUrl: 'app/tabs/tabs.html'
+            })
+            .state('app.dash', {
+                url: '/dashboard',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'app/dashboard/dashboard.html',
+                        controller: 'dashboardController',
+                        controllerAs:'dash'
+                    }
+                }
+            })
+            .state('app.profile', {
+                url: '/profile',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'app/profile/profile.html',
+                        controller: 'profileController',
+                        controllerAs:'profile'
+                    }
+                }
             });
-          /*.state('app', {
-            url: '/app',
-            abstract: true,
-            templateUrl: 'app/menu/menu.html',
-            controller: 'menuController',
-            controllerAs:'menu'
-          })
-          .state('app.flash', {
-            url: '/flash',
-            views: {
-              'menuContent': {
-                templateUrl: 'app/flash/flash.html',
-                controller: 'flashController',
-                controllerAs:'flash'
-              }
-            }
-          })
-          .state('app.users', {
+          /*.state('app.users', {
             url: '/users',
             views: {
               'menuContent': {

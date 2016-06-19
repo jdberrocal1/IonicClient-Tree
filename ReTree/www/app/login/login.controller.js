@@ -20,11 +20,9 @@
       vm.login = function login(credentials) {
           var isValidUser = LoginService.login(credentials);
           if(isValidUser){
-              var alertPopup = $ionicPopup.alert({
-                  title: 'Bienvenido',
-                  template: 'Ha ingresado correctamente!'
-              });
+
               vm.credentials={};
+              $state.go('app.dash');
           }else{
               var alertPopup = $ionicPopup.alert({
                   title: 'Error',

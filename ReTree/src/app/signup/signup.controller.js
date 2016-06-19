@@ -14,6 +14,11 @@
           img:'img/userDefault.png'
       }
 
+
+      vm.cancel = function cancel() {
+          $state.go('login');
+      };
+
       vm.signup = function signup(user) {
           SignupService.signup(user);
           vm.user={};
