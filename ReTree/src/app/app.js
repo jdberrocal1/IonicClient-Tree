@@ -45,13 +45,33 @@
                 abstract: true,
                 templateUrl: 'app/tabs/tabs.html'
             })
-            .state('tab.dash', {
-                url: '/dash',
+            .state('tab.lands', {
+                url: '/lands',
                 views: {
-                    'tab-dash': {
-                        templateUrl: 'app/dashboard/dashboard.html',
-                        controller: 'dashboardController',
-                        controllerAs:'dash'
+                    'lands': {
+                        templateUrl: 'app/lands/lands.html',
+                        controller: 'landsController',
+                        controllerAs:'lands'
+                    }
+                }
+            })
+            .state('tab.land-detail', {
+                url: '/lands/land/:landId',
+                views: {
+                    'lands': {
+                        templateUrl: 'app/land/land.html',
+                        controller: 'landController',
+                        controllerAs:'land'
+                    }
+                }
+            })
+            .state('tab.land-add', {
+                url: '/lands/addLand',
+                views: {
+                    'lands': {
+                        templateUrl: 'app/addLand/addLand.html',
+                        controller: 'addLandController',
+                        controllerAs:'addLand'
                     }
                 }
             })

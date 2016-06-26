@@ -1,11 +1,11 @@
 
 (function () {
-  var controllerId = 'dashboardController';
+  var controllerId = 'landsController';
   angular
     .module('app')
-        .controller(controllerId, ['$scope','$state',Dashboard]);
+        .controller(controllerId, ['$scope','$state',Lands]);
 
-    function Dashboard ($scope,$state)
+    function Lands ($scope,$state)
     {
       var vm = this;
       vm.lands=[
@@ -36,7 +36,7 @@
       vm.loading=false;
 
       vm.goAddLand = function goAddLand(){
-          $state.go('tab.dash-add');
+          $state.go('tab.land-add');
       }
 
     }

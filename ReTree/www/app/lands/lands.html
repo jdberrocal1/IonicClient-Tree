@@ -1,26 +1,26 @@
-<ion-view view-title="Dashboard" name="dashboard-view">
+<ion-view view-title="Lands">
     <ion-content class="padding">
-        <div class="center dashboard-title">
+        <div class="center lands-title">
             <h2>Fincas</h2>
-            <a class="button button-icon icon ion-plus-round" ng-click="dash.goAddLand()"></a>
+            <a class="button button-icon icon ion-plus-round" ng-click="lands.goAddLand()"></a>
         </div>
-        <div class="noLands" ng-if="dash.lands.length==0 && !dash.loading">
+        <div class="noLands" ng-if="lands.lands.length==0 && !lands.loading">
 
             <div class="center">
                 <p>Para agregar Fincas/Terrenos precione el boton</p>
-                <a class="button button-icon icon ion-plus-round" ng-click="dash.goAddLand()"></a>
+                <a class="button button-icon icon ion-plus-round" ng-click="lands.goAddLand()"></a>
             </div>
 
         </div>
-        <div class="noLands center" ng-if="dash.loading">
+        <div class="noLands center" ng-if="lands.loading">
             <ion-spinner></ion-spinner>
             <p>
                 Cargando
             </p>
         </div>
-        <div class="list" ng-if="dash.lands.length!=0 && !dash.loading">
+        <div class="list" ng-if="lands.lands.length!=0 && !lands.loading">
 
-            <a class="item item-avatar" ng-repeat="land in dash.lands" href="#/tab/dash/{{land.id}}" ng-if="dash.lands.length!=0">
+            <a class="item item-avatar" ng-repeat="land in lands.lands" href="#/tab/lands/land/{{land.id}}" ng-if="lands.lands.length!=0">
                 <img src="img/userDefault.png">
                 <h2 ng-bind="land.name"></h2>
                 <p>
