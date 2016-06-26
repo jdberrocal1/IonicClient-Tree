@@ -22,7 +22,7 @@
           if(isValidUser){
 
               vm.credentials={};
-              $state.go('app.dash');
+              $state.go('tab.dash');
           }else{
               var alertPopup = $ionicPopup.alert({
                   title: 'Error',

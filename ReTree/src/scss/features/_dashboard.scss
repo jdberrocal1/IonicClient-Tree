@@ -1,8 +1,15 @@
-.dashboard-tab{
-    div{
-        background-color: $primary-color !important;
-        color: white;
-        top:0px !important;
-        height: 60px !important;
+.dashboard-title{
+    padding-top: 5px;
+    h2{
+        padding-top: 5px;
     }
+    a{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+}
+
+.noLands{
+    padding-top: 50%;
 }

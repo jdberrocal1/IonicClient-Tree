@@ -1,12 +1,34 @@
 <ion-view view-title="Dashboard" name="dashboard-view">
-  
+    <ion-content class="padding">
+        <div class="center dashboard-title">
+            <h2>Fincas</h2>
+            <a class="button button-icon icon ion-plus-round"></a>
+        </div>
+        <div class="noLands" ng-if="dash.lands.length==0 && !dash.loading">
 
-  <ion-content class="padding">
-    <div class="row">
-        <div class="col text-center">
-            <h3 class="hi">Welcome</h3>
+            <div class="center">
+                <p>Para agregar Fincas/Terrenos precione el boton</p>
+                <a class="button button-icon icon ion-plus-round"></a>
+            </div>
 
         </div>
-    </div>
-  </ion-content>
+        <div class="noLands center" ng-if="dash.loading">
+            <ion-spinner></ion-spinner>
+            <p>
+                Cargando
+            </p>
+        </div>
+        <div class="list" ng-if="dash.lands.length!=0 && !dash.loading">
+
+            <a class="item item-avatar" ng-repeat="land in dash.lands" href="#/tab/land/{{land.id}}" ng-if="dash.lands.length!=0">
+                <img src="img/userDefault.png">
+                <h2 ng-bind="land.name"></h2>
+                <p>
+                    <span ng-bind="land.address.province"></span>,
+                    <span ng-bind="land.address.canton"></span>,
+                    <span ng-bind="land.address.district"></span>.
+                </p>
+            </a>
+        </div>
+    </ion-content>
 </ion-view>

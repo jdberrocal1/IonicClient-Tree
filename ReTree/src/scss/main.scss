@@ -6,7 +6,8 @@
 //feature
 'features/_login',
 'features/_signup',
-'features/_dashboard';
+'features/_dashboard',
+'features/_tabs';
 
 .primaryInput {
     font-family: "Roboto", sans-serif;
@@ -33,7 +34,7 @@
   border: 0;
   padding: 15px;
   color: $white;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
@@ -46,12 +47,6 @@
     background-color: transparent;
     border: 0;
     font-size: 28px;
-}
-
-.bar, .bar.bar-light{
-    background-color: transparent;
-    background: transparent;
-    background-image: transparent;
 }
 
 .error-container {
@@ -90,4 +85,8 @@
 
 .disabled {
   opacity: 0.5;
+}
+
+.center{
+    text-align: center;
 }

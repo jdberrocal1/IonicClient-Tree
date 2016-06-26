@@ -23,9 +23,10 @@
         });
     }
 
-    angular.module('app').config(['$stateProvider', '$urlRouterProvider', Config]);
+    angular.module('app').config(['$stateProvider', '$urlRouterProvider','$ionicConfigProvider', Config]);
 
-    function Config($stateProvider, $urlRouterProvider){
+    function Config($stateProvider, $urlRouterProvider,$ionicConfigProvider){
+        $ionicConfigProvider.tabs.position('bottom');
         $stateProvider
             .state('login', {
                 url: '/login',
@@ -39,25 +40,25 @@
                 controller: 'signupController',
                 controllerAs:'signup'
             })
-            .state('app', {
-                url: '/app',
+            .state('tab', {
+                url: '/tab',
                 abstract: true,
                 templateUrl: 'app/tabs/tabs.html'
             })
-            .state('app.dash', {
-                url: '/dashboard',
+            .state('tab.dash', {
+                url: '/dash',
                 views: {
-                    'menuContent': {
+                    'tab-dash': {
                         templateUrl: 'app/dashboard/dashboard.html',
                         controller: 'dashboardController',
                         controllerAs:'dash'
                     }
                 }
             })
-            .state('app.profile', {
+            .state('tab.profile', {
                 url: '/profile',
                 views: {
-                    'menuContent': {
+                    'tab-profile': {
                         templateUrl: 'app/profile/profile.html',
                         controller: 'profileController',
                         controllerAs:'profile'
