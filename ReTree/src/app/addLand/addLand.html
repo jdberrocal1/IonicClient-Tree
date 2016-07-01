@@ -8,6 +8,25 @@
                 <h2>Agregar</h2>
             </div>
         </div>
+        <form name="addLandForm" class="addLand-form">
+            <div class="list">
+                <label class="item item-input" ng-class="{ 'has-errors' : addLandForm.name.$invalid &&
+                signupForm.fullname.$dirty, 'no-errors' : signupForm.fullname.$valid}">
+                    <span class="input-label">Nombre</span>
+                    <input type="text" name="name" ng-model="signup.user.name" ng-minlength="5" ng-maxlength="50"
+                  required class="primaryInput">
+                </label>
+                <div class="error-container" ng-show="addLandForm.name.$error &&
+                addLandForm.name.$dirty" ng-messages="addLandForm.name.$error">
+                    <div ng-messages-include="{{addLand.errorTemplate}}"></div>
+                </div>
+
+
+            <button class="primaryButton" ng-click="signup.signup(signup.user)" ng-disabled="signupForm.$invalid"
+            ng-class="{ 'disabled' : signupForm.$invalid}">
+                Guardar
+            </button>
+        </form>
 
     </ion-content>
 </ion-view>
