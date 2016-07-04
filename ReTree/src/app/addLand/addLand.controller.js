@@ -7,7 +7,7 @@
 
     function AddLand ($scope,$state,ErrorService)
     {
-      var vm = this;
+      var vm = this; 
       vm.errorTemplate = ErrorService.errorTemplate;
       vm.cancel = function cancel() {
           $state.go('tab.lands');
