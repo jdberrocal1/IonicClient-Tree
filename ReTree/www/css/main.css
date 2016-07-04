@@ -25,6 +25,10 @@
 .noLands {
   padding-top: 50%; }
 
+.addLand-form {
+  margin-top: 15%;
+  margin-bottom: 15%; }
+
 .custom-tab .tab-nav {
   background-color: #e55a1c !important;
   color: white; }
