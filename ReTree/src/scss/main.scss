@@ -21,6 +21,16 @@
     margin-bottom: 15px;
 }
 
+.primarySelect {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px !important;
+    height: 60px !important;
+    position: relative !important;
+}
+
 .input-div{
     width: 100%;
     padding: 10px;
@@ -48,14 +58,6 @@
     background-color: transparent;
     border: 0;
     font-size: 28px;
-}
-
-.error-container {
-  margin: 5px 0;
-}
-
-.error-container:last-child {
-    margin: 5px 0 0;
 }
 
 .error {

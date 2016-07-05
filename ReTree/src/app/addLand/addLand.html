@@ -11,39 +11,40 @@
         <form name="addLandForm" class="addLand-form">
             <div class="list">
                 <label class="item item-input" ng-class="{ 'has-errors' : addLandForm.name.$invalid &&
-                signupForm.fullname.$dirty, 'no-errors' : addLandForm.fullname.$valid}">
+                addLandForm.name.$dirty, 'no-errors' : addLandForm.name.$valid}">
                     <span class="input-label">Nombre</span>
                     <input type="text" name="name" ng-model="addLand.land.name" ng-minlength="5" ng-maxlength="50"
                   required class="primaryInput">
                 </label>
-                <div class="error-container" ng-show="addLandForm.name.$error &&
-                addLandForm.name.$dirty" ng-messages="addLandForm.name.$error">
+                <div class="error-container" ng-if="addLandForm.name.$error && addLandForm.name.$dirty"
+                ng-messages="addLandForm.name.$error">
                     <div ng-messages-include="{{addLand.errorTemplate}}"></div>
                 </div>
                 <label class="item item-input item-select">
                     <div class="input-label">
                         Provincia
                     </div>
-                    <select name="mySelect" id="mySelect"
-                    ng-options="place.name for place in addLand.places"
-                    ng-model="addLand.land.place"></select>
+                    <select ng-options="place.name for place in addLand.places" ng-model="addLand.land.place" class="primarySelect" required></select>
                 </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
                         Cantón
                     </div>
-                    <select name="mySelect2" id="mySelect2"
-                    ng-options="canton.name for canton in addLand.land.place.cantons"
-                    ng-model="addLand.land.canton"></select>
+                    <select ng-options="canton.name for canton in addLand.land.place.cantons" ng-model="addLand.land.canton" class="primarySelect" required></select>
                 </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
                         Distrito
                     </div>
-                     <select name="mySelect2" id="mySelect2"
-                    ng-options="district.name for district in addLand.land.canton.districts"
-                    ng-model="addLand.land.district"></select>
+                     <select ng-options="district.name for district in addLand.land.canton.districts" ng-model="addLand.land.district" class="primarySelect" required></select>
                 </label>
+                <label class="item item-input">
+                    <span class="input-label">Otras Señas</span>
+                    <input type="text" name="address" ng-model="addLand.land.address" class="primaryInput">
+                </label>
+                <div class="item center">
+                    <img src="img/map.png" alt="Map" ng-click="addLand.openMap()"/>
+                </div>
             <button class="primaryButton" ng-disabled="addLandForm.$invalid"
             ng-class="{ 'disabled' : addLandForm.$invalid}">
                 Guardar

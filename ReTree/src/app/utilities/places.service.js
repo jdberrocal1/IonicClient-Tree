@@ -14,52 +14,52 @@
                     {
                         name:'San José',
                         districts:[
-                            {name:'Carmen'}, 
-                            {name:'Merced'}, 
-                            {name:'Hospital'}, 
-                            {name:'Catedral'}, 
-                            {name:'Zapote'}, 
-                            {name:'San Francisco de Dos Ríos'}, 
-                            {name:'Uruca'}, {name:'Mata Redonda'}, 
-                            {name:'Pavas'}, {name:'Hatillo'}, 
+                            {name:'Carmen'},
+                            {name:'Merced'},
+                            {name:'Hospital'},
+                            {name:'Catedral'},
+                            {name:'Zapote'},
+                            {name:'San Francisco de Dos Ríos'},
+                            {name:'Uruca'}, {name:'Mata Redonda'},
+                            {name:'Pavas'}, {name:'Hatillo'},
                             {name:'San Sebastían'}]
                     },
                     {
                         name:'Escazú',
                         districts:[
-                            {name:'Escazú'}, 
-                            {name:'San Antonio'}, 
+                            {name:'Escazú'},
+                            {name:'San Antonio'},
                             {name:'San Rafael'}]
                     },
                     {
                         name:'Desamparados',
                         districts:[
-                            {name:'Desamparados'}, 
-                            {name:'San Miguel'}, 
+                            {name:'Desamparados'},
+                            {name:'San Miguel'},
                             {name:'San Juan de Dios'},
-                            {name: 'San Rafael Arriba'}, 
-                            {name:'San Antonio'}, 
-                            {name:'Frailes'}, 
-                            {name:'Patarrá'}, 
-                            {name:'San Cristobal'}, 
-                            {name:'Rosario'}, 
-                            {name:'Damas'}, 
-                            {name:'San Rafael Abajo'}, 
-                            {name:'Gravilias'}, 
+                            {name: 'San Rafael Arriba'},
+                            {name:'San Antonio'},
+                            {name:'Frailes'},
+                            {name:'Patarrá'},
+                            {name:'San Cristobal'},
+                            {name:'Rosario'},
+                            {name:'Damas'},
+                            {name:'San Rafael Abajo'},
+                            {name:'Gravilias'},
                             {name:'Los Guido'}
                         ]
                     },
                     {
                         name:'Puriscal',
                         districts:[
-                            {name:'Santiago'}, 
-                            {name:'Mercedes Sur'}, 
-                            {name:'Barbacoas'}, 
-                            {name:'Grifo Alto'}, 
-                            {name:'San Rafael'}, 
-                            {name:'Candelarita'}, 
-                            {name:'Desamparaditos'}, 
-                            {name:'San Antonio'}, 
+                            {name:'Santiago'},
+                            {name:'Mercedes Sur'},
+                            {name:'Barbacoas'},
+                            {name:'Grifo Alto'},
+                            {name:'San Rafael'},
+                            {name:'Candelarita'},
+                            {name:'Desamparaditos'},
+                            {name:'San Antonio'},
                             {name:'Chires'}
                         ]
                     },
@@ -128,43 +128,105 @@
                     },
                     {
                         name:'Vázquez de Coronado',
-                        districts:['San Isidro','San Rafael','Dulce Nombre de Jesús','Patalillo','Cascajal']
+                        districts:[
+                            {name:'San Isidro'},
+                            {name:'San Rafael'},
+                            {name:'Dulce Nombre de Jesús'},
+                            {name:'Patalillo'},
+                            {name:'Cascajal'}
+                        ]
                     },
                     {
                         name:'Acosta',
-                        districts:['San Ignacio','Guaitil','Palmichal','Cangrejal','Sabanillas']
+                        districts:[
+                            {name:'San Ignacio'},
+                            {name:'Guaitil'},
+                            {name:'Palmichal'},
+                            {name:'Cangrejal'},
+                            {name:'Sabanillas'}
+                        ]
                     },
                     {
                         name:'Tibás',
-                        districts:['San Juan','Cinco Esquinas','Anselmo Llorente','León XIII ','Colima']
+                        districts:[
+                            {name:'San Juan'},
+                            {name:'Cinco Esquinas'},
+                            {name:'Anselmo Llorente'},
+                            {name:'León XIII '},
+                            {name:'Colima'}
+                        ]
                     },
                     {
                         name:'Moravia',
-                        districts:['San Vicente','San Jerónimo','La Trinidad']
+                        districts:[
+                            {name:'San Vicente'},
+                            {name:'San Jerónimo'},
+                            {name:'La Trinidad'}
+                        ]
                     },
                     {
                         name:'Montes de Oca',
-                        districts:['San Pedro','Sabanilla','Mercedes','San Rafael']
+                        districts:[
+                            {name:'San Pedro'},
+                            {name:'Sabanilla'},
+                            {name:'Mercedes'},
+                            {name:'San Rafael'}
+                        ]
                     },
                     {
                         name:'Turrubares',
-                        districts:['San Pablo','San Pedro','San Juan de Mata','San Luis','Carara']
+                        districts:[
+                            {name:'San Pablo'},
+                            {name:'San Pedro'},
+                            {name:'San Juan de Mata'},
+                            {name:'San Luis'},
+                            {name:'Carara'}
+                        ]
                     },
                     {
                         name:'Dota',
-                        districts:['Santa María','El Jardín','Copey']
+                        districts:[
+                            {name:'Santa María'},
+                            {name:'El Jardín'},
+                            {name:'Copey'}
+                        ]
                     },
                     {
                         name:'Curridabat',
-                        districts:['Curridabat','Granadilla','Sánchez','Tirrases']
+                        districts:[
+                            {name:'Curridabat'},
+                            {name:'Granadilla'},
+                            {name:'Sánchez'},
+                            {name:'Tirrases'}
+                        ]
                     },
                     {
                         name:'Pérez Zeledón',
-                        districts:['San Isidro de El General','El General','Daniel Flores','Rivas','San Pedro','Platanares','Pejibaye','Cajón','Barú','Río Nuevo','Páramo','La Amistad']
+                        districts:[
+                            {name:'San Isidro de El General'},
+                            {name:'El General'},
+                            {name:'Daniel Flores'},
+                            {name:'Rivas'},
+                            {name:'San Pedro'},
+                            {name:'Platanares'},
+                            {name:'Pejibaye'},
+                            {name:'Cajón'},
+                            {name:'Barú'},
+                            {name:'Río Nuevo'},
+                            {name:'Páramo'},
+                            {name:'La Amistad'}
+                        ]
                     },
                     {
                         name:'León Cortés',
-                        districts:['San Pablo','San Andrés','Llano Bonito','San Isidro','Santa Cruz','San Antonio']
+                        districts:[
+                            {name:'San Pablo'},
+                            {name:'San Andrés'},
+                            {name:'Llano Bonito'},
+                            {name:'San Isidro'},
+                            {name:'Santa Cruz'},
+                            {name:'San Antonio'}
+                        ]
                     }
                 ]
             },
@@ -174,63 +236,190 @@
                 cantons:[
                     {
                         name:'Alajuela',
-                        districts:['Alajuela','San José','Carrizal','San Antonio','Guácima','San Isidro','Sabanilla','San Rafael','Río Segundo','Desamparados','Turrúcares','Tambor','Garita','Sarapiquí']
+                        districts:[
+                            {name:'Alajuela'},
+                            {name:'San José'},
+                            {name:'Carrizal'},
+                             {name:'San Antonio'},
+                             {name:'Guácima'},
+                             {name:'San Isidro'},
+                             {name:'Sabanilla'},
+                             {name:'San Rafael'},
+                             {name:'Río Segundo'},
+                             {name:'Desamparados'},
+                             {name:'Turrúcares'},
+                             {name:'Tambor'},
+                             {name:'Garita'},
+                             {name:'Sarapiquí'}
+                         ]
                     },
                     {
                         name:'San Ramón',
-                        districts:['San Ramón','Santiago','San Juan','Piedades Norte','Piedades Sur','San Rafael','San Isidro','Ángeles ','Alfaro','Volio','Concepción','Zapotal','Peñas Blancas']
+                        districts:[
+                            {name:'San Ramón'},
+                            {name:'Santiago'},
+                            {name:'San Juan'},
+                            {name:'Piedades Norte'},
+                            {name:'Piedades Sur'},
+                            {name:'San Rafael'},
+                            {name:'San Isidro'},
+                            {name:'Ángeles '},
+                            {name:'Alfaro'},
+                            {name:'Volio'},
+                            {name:'Concepción'},
+                            {name:'Zapotal'},
+                            {name:'Peñas Blancas'}
+                        ]
                     },
                     {
                         name:'Grecia',
-                        districts:['Grecia','San Isidro','San José','San Roque','Tacares','Río Cuarto','Puente de Piedra','Bolívar']
+                        districts:[
+                            {name:'Grecia'},
+                            {name:'San Isidro'},
+                            {name:'San José'},
+                            {name:'San Roque'},
+                            {name:'Tacares'},
+                            {name:'Río Cuarto'},
+                            {name:'Puente de Piedra'},
+                            {name:'Bolívar'}
+                        ]
                     },
                     {
                         name:'San Mateo',
-                        districts:['San Mateo','Desmonte','Jesús María','Labrador']
+                        districts:[
+                            {name:'San Mateo'},
+                            {name:'Desmonte'},
+                            {name:'Jesús María'},
+                            {name:'Labrador'}
+                        ]
                     },
                     {
                         name:'Atenas',
-                        districts:['Atenas','Jesús','Mercedes','San Isidro','Concepción','San José','Santa Eulalia','Escobal']
+                        districts:[
+                            {name:'Atenas'},
+                            {name:'Jesús'},
+                            {name:'Mercedes'},
+                            {name:'San Isidro'},
+                            {name:'Concepción'},
+                            {name:'San José'},
+                            {name:'Santa Eulalia'},
+                            {name:'Escobal'}
+                        ]
                     },
                     {
                         name:'Naranjo',
-                        districts:['Naranjo','San Miguel','San José','Cirrí Sur','San Jerónimo','San Juan','El Rosario','Palmitos']
+                        districts:[
+                            {name:'Naranjo'},
+                            {name:'San Miguel'},
+                            {name:'San José'},
+                            {name:'Cirrí Sur'},
+                            {name:'San Jerónimo'},
+                            {name:'San Juan'},
+                            {name:'El Rosario'},
+                            {name:'Palmitos'}
+                        ]
                     },
                     {
                         name:'Palmares',
-                        districts:['Palmares','Zaragoza','Buenos Aires','Santiago','Candelaria','Esquipulas','La Granja']
+                        districts:[
+                            {name:'Palmares'},
+                            {name:'Zaragoza'},
+                            {name:'Buenos Aires'},
+                            {name:'Santiago'},
+                            {name:'Candelaria'},
+                            {name:'Esquipulas'},
+                            {name:'La Granja'}]
                     },
                     {
                         name:'Poás',
-                        districts:['San Pedro','San Juan','San Rafael','Carrillos','Sabana Redonda']
+                        districts:[
+                            {name:'San Pedro'},
+                            {name:'San Juan'},
+                            {name:'San Rafael'},
+                            {name:'Carrillos'},
+                            {name:'Sabana Redonda'}
+                        ]
                     },
                     {
                         name:'Orotina',
-                        districts:['Orotina','El Mastate','Hacienda Vieja','Coyolar','La Ceiba']
+                        districts:[
+                            {name:'Orotina'},
+                            {name:'El Mastate'},
+                            {name:'Hacienda Vieja'},
+                            {name:'Coyolar'},
+                            {name:'La Ceiba'}
+                        ]
                     },
                     {
                         name:'San Carlos',
-                        districts:['Quesada','Florencia','Buenavista','Aguas Zarcas','Venecia','Pital','La Fortuna','La Tigra','La Palmera','Venado','Cutris','Monterrey','Pocosol']
+                        districts:[
+                            {name:'Quesada'},
+                            {name:'Florencia'},
+                            {name:'Buenavista'},
+                            {name:'Aguas Zarcas'},
+                            {name:'Venecia'},
+                            {name:'Pital'},
+                            {name:'La Fortuna'},
+                            {name:'La Tigra'},
+                            {name:'La Palmera'},
+                            {name:'Venado'},
+                            {name:'Cutris'},
+                            {name:'Monterrey'},
+                            {name:'Pocosol'}
+                        ]
                     },
                     {
                         name:'Zarcero',
-                        districts:['Zarcero','Laguna','Tapesco','Guadalupe','Palmira','Zapote','Brisas']
+                        districts:[
+                            {name:'Zarcero'},
+                            {name:'Laguna'},
+                            {name:'Tapesco'},
+                            {name:'Guadalupe'},
+                            {name:'Palmira'},
+                            {name:'Zapote'},
+                            {name:'Brisas'}
+                        ]
                     },
                     {
                         name:'Valverde Vega',
-                        districts:['Sarchí Norte','Sarchí Sur','Toro Amarillo','San Pedro','Rodríguez']
+                        districts:[
+                            {name:'Sarchí Norte'},
+                            {name:'Sarchí Sur'},
+                            {name:'Toro Amarillo'},
+                            {name:'San Pedro'},
+                            {name:'Rodríguez'}
+                        ]
                     },
                     {
                         name:'Upala',
-                        districts:['Upala','Aguas Claras','San José o Pizote','Bijagua','Delicias','Dos Ríos','Yolillal','Canalete']
+                        districts:[
+                            {name:'Upala'},
+                            {name:'Aguas Claras'},
+                            {name:'San José o Pizote'},
+                            {name:'Bijagua'},
+                            {name:'Delicias'},
+                            {name:'Dos Ríos'},
+                            {name:'Yolillal'},
+                            {name:'Canalete'}
+                        ]
                     },
                     {
                         name:'Los Chiles',
-                        districts:['Los Chiles','Caño Negro','El Amparo','San Jorge']
+                        districts:[
+                            {name:'Los Chiles'},
+                            {name:'Caño Negro'},
+                            {name:'El Amparo'},
+                            {name:'San Jorge'}
+                        ]
                     },
                     {
                         name:'Guatuso',
-                        districts:['San Rafael','Buenavista','Cote','Katira']
+                        districts:[
+                            {name:'San Rafael'},
+                            {name:'Buenavista'},
+                            {name:'Cote'},
+                            {name:'Katira'}
+                        ]
                     }
                 ]
             },
@@ -240,35 +429,94 @@
                 cantons:[
                     {
                         name:'Cartago',
-                        districts:['Oriental','Occidental','Carmen','San Nicolás','Aguacaliente o San Francisco','Guadalupe o Arenilla','Corralillo','Tierra Blanca','Dulce Nombre','Llano Grande','Quebradilla']
+                        districts:[
+                            {name:'Oriental'},
+                            {name:'Occidental'},
+                            {name:'Carmen'},
+                            {name:'San Nicolás'},
+                            {name:'Aguacaliente o San Francisco'},
+                            {name:'Guadalupe o Arenilla'},
+                            {name:'Corralillo'},
+                            {name:'Tierra Blanca'},
+                            {name:'Dulce Nombre'},
+                            {name:'Llano Grande'},
+                            {name:'Quebradilla'}
+                        ]
                     },
                     {
                         name:'Paraíso',
-                        districts:['Paraíso','Santiago','Orosi','Cachí','Llanos de Santa Lucía']
+                        districts:[
+                            {name:'Paraíso'},
+                            {name:'Santiago'},
+                            {name:'Orosi'},
+                            {name:'Cachí'},
+                            {name:'Llanos de Santa Lucía'}
+                        ]
                     },
                     {
                         name:'La Unión',
-                        districts:['Tres Ríos','San Diego','San Juan','San Rafael','Concepción','Dulce Nombre','San Ramón','Río Azul']
+                        districts:[
+                            {name:'Tres Ríos'},
+                            {name:'San Diego'},
+                            {name:'San Juan'},
+                            {name:'San Rafael'},
+                            {name:'Concepción'},
+                            {name:'Dulce Nombre'},
+                            {name:'San Ramón'},
+                            {name:'Río Azul'}
+                        ]
                     },
                     {
                         name:'Jiménez',
-                        districts:['Juan Viñas','Tucurrique','Pejibaye']
+                        districts:[
+                            {name:'Juan Viñas'},
+                            {name:'Tucurrique'},
+                            {name:'Pejibaye'}
+                        ]
                     },
                     {
                         name:'Turrialba',
-                        districts:['Turrialba','La Suiza','Peralta','Santa Cruz','Santa Teresita','Pavones','Tuis','Tayutic','Santa Rosa','Tres Equis','La Isabel','Chirripó']
+                        districts:[
+                            {name:'Turrialba'},
+                            {name:'La Suiza'},
+                            {name:'Peralta'},
+                            {name:'Santa Cruz'},
+                            {name:'Santa Teresita'},
+                            {name:'Pavones'},
+                            {name:'Tuis'},
+                            {name:'Tayutic'},
+                            {name:'Santa Rosa'},
+                            {name:'Tres Equis'},
+                            {name:'La Isabel'},
+                            {name:'Chirripó'}
+                         ]
                     },
                     {
                         name:'Alvarado',
-                        districts:['Pacayas','Cervantes','Capellades']
+                        districts:[
+                            {name:'Pacayas'},
+                            {name:'Cervantes'},
+                            {name:'Capellades'}
+                        ]
                     },
                     {
                         name:'Oreamuno',
-                        districts:['San Rafael','Cot','Potrero Cerrado','Cipreses','Santa Rosa']
+                        districts:[
+                            {name:'San Rafael'},
+                            {name:'Cot'},
+                            {name:'Potrero Cerrado'},
+                            {name:'Cipreses'},
+                            {name:'Santa Rosa'}
+                        ]
                     },
                     {
                         name:'El Guarco',
-                        districts:['El Tejar','San Isidro','Tobosi','Patio de Agua']
+                        districts:[
+                            {name:'El Tejar'},
+                            {name:'San Isidro'},
+                            {name:'Tobosi'},
+                            {name:'Patio de Agua'}
+                        ]
                     }
                 ]
             },
@@ -278,43 +526,99 @@
                 cantons:[
                     {
                         name:'Heredia',
-                        districts:['Heredia','Mercedes','San Francisco','Ulloa ','Varablanca']
+                        districts:[
+                            {name:'Heredia'},
+                            {name:'Mercedes'},
+                            {name:'San Francisco'},
+                            {name:'Ulloa '},
+                            {name:'Varablanca'}
+                        ]
                     },
                     {
                         name:'Barva',
-                        districts:['Barva','San Pedro','San Pablo','San Roque','Santa Lucía','San José de la Montaña']
+                        districts:[
+                            {name:'Barva'},
+                            {name:'San Pedro'},
+                            {name:'San Pablo'},
+                            {name:'San Roque'},
+                            {name:'Santa Lucía'},
+                            {name:'San José de la Montaña'}
+                        ]
                     },
                     {
                         name:'Santo Domingo',
-                        districts:['Santo Domingo','San Vicente','Paracito','Santo Tomás','Santa Rosa','Tures','Pará']
+                        districts:[
+                            {name:'Santo Domingo'},
+                            {name:'San Vicente'},
+                            {name:'Paracito'},
+                            {name:'Santo Tomás'},
+                            {name:'Santa Rosa'},
+                            {name:'Tures'},
+                            {name:'Pará'}
+                        ]
                     },
                     {
                         name:'Santa Bárbara',
-                        districts:['Santa Bárbara','San Pedro','San Juan','Jesús','Santo Domingo','Purabá']
+                        districts:[
+                            {name:'Santa Bárbara'},
+                            {name:'San Pedro'},
+                            {name:'San Juan'},
+                            {name:'Jesús'},
+                            {name:'Santo Domingo'},
+                            {name:'Purabá'}
+                        ]
                     },
                     {
                         name:'San Rafael',
-                        districts:['San Rafael','San Josecito','Santiago','Ángeles','Concepción']
+                        districts:[
+                            {name:'San Rafael'},
+                            {name:'San Josecito'},
+                            {name:'Santiago'},
+                            {name:'Ángeles'},
+                            {name:'Concepción'}
+                         ]
                     },
                     {
                         name:'San Isidro',
-                        districts:['San Isidro','San José','Concepción','San Francisco']
+                        districts:[
+                            {name:'San Isidro'},
+                            {name:'San José'},
+                            {name:'Concepción'},
+                            {name:'San Francisco'}
+                        ]
                     },
                     {
                         name:'Belén',
-                        districts:['San Antonio','La Ribera','La Asunción']
+                        districts:[
+                            {name:'San Antonio'},
+                            {name:'La Ribera'},
+                            {name:'La Asunción'}
+                        ]
                     },
                     {
                         name:'Flores',
-                        districts:['San Joaquín','Barrantes ','Llorente']
+                        districts:[
+                            {name:'San Joaquín'},
+                            {name:'Barrantes '},
+                            {name:'Llorente'}
+                        ]
                     },
                     {
                         name:'San Pablo',
-                        districts:['San Pablo','Rincón de Sabanilla']
+                        districts:[
+                            {name:'San Pablo'},
+                            {name:'Rincón de Sabanilla'}
+                        ]
                     },
                     {
                         name:'Sarapiquí',
-                        districts:['Puerto Viejo','La Virgen','Las Horquetas','Llanuras del Gaspar','Cureña']
+                        districts:[
+                            {name:'Puerto Viejo'},
+                            {name:'La Virgen'},
+                            {name:'Las Horquetas'},
+                            {name:'Llanuras del Gaspar'},
+                            {name:'Cureña'}
+                        ]
                     }
                 ]
             },
@@ -324,50 +628,117 @@
                 cantons:[
                     {
                         name:'Liberia',
-                        districts:['Liberia','Cañas Dulces','Mayorga','Nacascolo','Curubandé']
+                        districts:[
+                            {name:'Liberia'},
+                            {name:'Cañas Dulces'},
+                            {name:'Mayorga'},
+                            {name:'Nacascolo'},
+                            {name:'Curubandé'}
+                        ]
                     },
                     {
                         name:'Nicoya',
-                        districts:['Nicoya','Mansión','San Antonio','Quebrada Honda','Sámara','Nosara','Belén de Nosarita']
+                        districts:[
+                            {name:'Nicoya'},
+                            {name:'Mansión'},
+                            {name:'San Antonio'},
+                            {name:'Quebrada Honda'},
+                            {name:'Sámara'},
+                            {name:'Nosara'},
+                            {name:'Belén de Nosarita'}
+                        ]
                     },
                     {
                         name:'Santa Cruz',
-                        districts:['Santa Cruz','Bolsón','Veintisiete de Abril','Tempate','Cartagena','Cuajiniquil','Diriá','Cabo Velas ','Tamarindo']
+                        districts:[
+                            {name:'Santa Cruz'},
+                            {name:'Bolsón'},
+                            {name:'Veintisiete de Abril'},
+                            {name:'Tempate'},
+                            {name:'Cartagena'},
+                            {name:'Cuajiniquil'},
+                            {name:'Diriá'},
+                            {name:'Cabo Velas '},
+                            {name:'Tamarindo'}
+                        ]
                     },
                     {
                         name:'Bagaces',
-                        districts:['Bagaces','La Fortuna','Mogote','Río Naranjo']
+                        districts:[
+                            {name:'Bagaces'},
+                            {name:'La Fortuna'},
+                            {name:'Mogote'},
+                            {name:'Río Naranjo'}
+                        ]
                     },
                     {
                         name:'Carrillo',
-                        districts:['Filadelfia','Palmira','Sardinal','Belén']
+                        districts:[
+                            {name:'Filadelfia'},
+                            {name:'Palmira'},
+                            {name:'Sardinal'},
+                            {name:'Belén'}
+                        ]
                     },
                     {
                         name:'Cañas',
-                        districts:['Cañas','Palmira','San Miguel','Bebedero','Porozal']
+                        districts:[
+                            {name:'Cañas'},
+                            {name:'Palmira'},
+                            {name:'San Miguel'},
+                            {name:'Bebedero'},
+                            {name:'Porozal'}
+                        ]
                     },
                     {
                         name:'Abangares',
-                        districts:['Las Juntas','Sierra','San Juan ','Colorado']
+                        districts:[
+                            {name:'Las Juntas'},
+                            {name:'Sierra'},
+                            {name:'San Juan '},
+                            {name:'Colorado'}
+                        ]
                     },
                     {
                         name:'Tilarán',
-                        districts:['Tilarán','Quebrada Grande','Tronadora','Santa Rosa','Líbano','Tierras Morenas','Arenal']
+                        districts:[
+                            {name:'Tilarán'},
+                            {name:'Quebrada Grande'},
+                            {name:'Tronadora'},
+                            {name:'Santa Rosa'},
+                            {name:'Líbano'},
+                            {name:'Tierras Morenas'}, {name:'Arenal'}]
                     },
                     {
                         name:'Nandayure',
-                        districts:['Carmona','Santa Rita','Zapotal','San Pablo','San Pablo','Porvenir','Bejuco']
+                        districts:[
+                            {name:'Carmona'},
+                            {name:'Santa Rita'},
+                            {name:'Zapotal'},
+                            {name:'San Pablo'},
+                            {name:'San Pablo'},
+                             {name:'Porvenir'},
+                             {name:'Bejuco'}]
                     },
                     {
                         name:'La Cruz',
-                        districts:['La Cruz','Santa Cecilia','La Garita','Santa Elena']
+                        districts:[
+                            {name:'La Cruz'},
+                            {name:'Santa Cecilia'},
+                            {name:'La Garita'},
+                            {name:'Santa Elena'}
+                        ]
                     },
                     {
                         name:'Hojancha',
-                        districts:['Hojancha','Monte Romo','Puerto Carrillo','Huacas']
+                        districts:[
+                            {name:'Hojancha'},
+                            {name:'Monte Romo'},
+                            {name:'Puerto Carrillo'},
+                            {name:'Huacas'}
+                        ]
                     }
                 ]
-
             },
             {
                 id: 6,
@@ -375,35 +746,94 @@
                 cantons:[
                     {
                         name:'Puntarenas',
-                        districts:['Puntarenas','Pitahaya','Chomes','Lepanto','Paquera','Manzanillo','Guacimal','Barranca','Monte Verde','Isla del Coco','Cóbano','Chacarita','Chira','Acapulco','El Roble','Arancibia']
+                        districts:[
+                            {name:'Puntarenas'},
+                            {name:'Pitahaya'},
+                            {name:'Chomes'},
+                            {name:'Lepanto'},
+                            {name:'Paquera'},
+                            {name:'Manzanillo'},
+                            {name:'Guacimal'},
+                            {name:'Barranca'},
+                            {name:'Monte Verde'},
+                            {name:'Isla del Coco'},
+                            {name:'Cóbano'},
+                            {name:'Chacarita'},
+                            {name:'Chira'},
+                            {name:'Acapulco'},
+                            {name:'El Roble'},
+                            {name:'Arancibia'}
+                        ]
                     },
                     {
                         name:'Esparza',
-                        districts:['Espíritu Santo ','San Juan Grande','Macacona','San Rafael','San Jerónimo']
+                        districts:[
+                            {name:'Espíritu Santo '},
+                            {name:'San Juan Grande'},
+                            {name:'Macacona'},
+                            {name:'San Rafael'},
+                            {name:'San Jerónimo'}
+                        ]
                     },
                     {
                         name:'Buenos Aires',
-                        districts:['Buenos Aires','Volcán','Potrero Grande','Boruca','Pilas','Colinas','Chánguena','Biolley','Brunka']
+                        districts:[
+                            {name:'Buenos Aires'},
+                            {name:'Volcán'},
+                            {name:'Potrero Grande'},
+                            {name:'Boruca'},
+                            {name:'Pilas'},
+                            {name:'Colinas'},
+                            {name:'Chánguena'},
+                            {name:'Biolley'},
+                            {name:'Brunka'}
+                        ]
                     },
                     {
                         name:'Montes de Oro',
-                        districts:['Miramar','La Unión','San Isidro']
+                        districts:[
+                            {name:'Miramar'},
+                            {name:'La Unión'},
+                            {name:'San Isidro'}
+                        ]
                     },
                     {
                         name:'Osa',
-                        districts:['Puerto Cortés','Palmar','Sierpe','Bahía Ballena','Piedras Blancas','Bahía Drake']
+                        districts:[
+                            {name:'Puerto Cortés'},
+                            {name:'Palmar'},
+                            {name:'Sierpe'},
+                            {name:'Bahía Ballena'},
+                            {name:'Piedras Blancas'},
+                            {name:'Bahía Drake'}
+                        ]
                     },
                     {
                         name:'Quepos',
-                        districts:['Quepos','Savegre','Naranjito']
+                        districts:[
+                            {name:'Quepos'},
+                            {name:'Savegre'},
+                            {name:'Naranjito'}
+                        ]
                     },
                     {
                         name:'Golfito',
-                        districts:[{name:'Golfito'}, {name:'Puerto Jiménez'}, {name:'Guaycará'}, {name:'Pavón'}]
+                        districts:[
+                            {name:'Golfito'},
+                            {name:'Puerto Jiménez'},
+                            {name:'Guaycará'},
+                            {name:'Pavón'}
+                        ]
                     },
                     {
                         name:'Coto Brus',
-                        districts:[{name:'San Vito'}, {name:'Sabalito'}, {name:'Agua Buena'}, {name:'Limoncito'}, {name:'Pittier'}]
+                        districts:[
+                            {name:'San Vito'},
+                            {name:'Sabalito'},
+                            {name:'Agua Buena'},
+                            {name:'Limoncito'},
+                            {name:'Pittier'}
+                        ]
                     },
                     {
                         name:'Parrita',
@@ -414,21 +844,20 @@
                     {
                         name:'Corredores',
                         districts:[
-                            {name:'Corredor'}, 
-                            {name:'La Cuesta'}, 
-                            {name:'Canoas'}, 
+                            {name:'Corredor'},
+                            {name:'La Cuesta'},
+                            {name:'Canoas'},
                             {name:'Laurel'}
                         ]
                     },
                     {
                         name:'Garabito',
                         districts:[
-                            {name:'Jacó'}, 
+                            {name:'Jacó'},
                             {name:'Tárcoles'}
                         ]
                     }
                 ]
-
             },
             {
                 id: 7,
@@ -445,56 +874,55 @@
                     },
                     {
                         name:'Pococí',
-                        districts:[ 
-                            {name:'Guápiles'},  
-                            {name:'Jiménez'},  
-                            {name:'Rita'},  
-                            {name:'Roxana'},  
-                            {name:'Cariari'},  
-                            {name:'Colorado'},  
-                            {name:'La Colonia'} 
+                        districts:[
+                            {name:'Guápiles'},
+                            {name:'Jiménez'},
+                            {name:'Rita'},
+                            {name:'Roxana'},
+                            {name:'Cariari'},
+                            {name:'Colorado'},
+                            {name:'La Colonia'}
                         ]
                     },
                     {
                         name:'Siquirres',
-                        districts:[ 
-                            {name:'Siquirres'},  
-                            {name:'Pacuarito'},  
-                            {name:'Florida'},  
-                            {name:'Germania'},  
-                            {name:'El Cairo'},  
-                            {name:'Alegría'} 
+                        districts:[
+                            {name:'Siquirres'},
+                            {name:'Pacuarito'},
+                            {name:'Florida'},
+                            {name:'Germania'},
+                            {name:'El Cairo'},
+                            {name:'Alegría'}
                         ]
                     },
                     {
                         name:'Talamanca',
-                        districts:[ 
-                            {name:'Bratsi'},  
-                            {name:'Sixaola'},  
-                            {name:'Cahuita'},  
-                            {name:'Telire'} 
+                        districts:[
+                            {name:'Bratsi'},
+                            {name:'Sixaola'},
+                            {name:'Cahuita'},
+                            {name:'Telire'}
                         ]
                     },
                     {
                         name:'Matina',
-                        districts:[ 
-                            {name:'Matina'},  
-                            {name:'Batán'},  
-                            {name:'Carrandi'} 
+                        districts:[
+                            {name:'Matina'},
+                            {name:'Batán'},
+                            {name:'Carrandi'}
                         ]
                     },
                     {
                         name:'Guácimo',
-                        districts:[ 
-                            {name:'Guácimo'},  
-                            {name:'Mercedes '},  
-                            {name:'Pocora'},  
-                            {name:'Río Jiménez'},  
-                            {name:'Duacarí'} 
+                        districts:[
+                            {name:'Guácimo'},
+                            {name:'Mercedes '},
+                            {name:'Pocora'},
+                            {name:'Río Jiménez'},
+                            {name:'Duacarí'}
                         ]
                     }
                 ]
-
             }
         ];
 
