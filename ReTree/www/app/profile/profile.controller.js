@@ -3,16 +3,22 @@
  */
 
 (function () {
-  var controllerId = 'profileController';
-  angular
-    .module('app')
-        .controller(controllerId, ['$scope',Profile]);
+    'use strict';
+    var controllerId = 'profileController';
+    angular
+        .module('app')
+            .controller(controllerId, ['DBService','CommunicationService','$state',Profile]);
 
-    function Profile ($scope)
+    function Profile (DBService,CommunicationService,$state)
     {
-      var vm = this;
+        var vm = this;
+        vm.profile = {
+            username : CommunicationService.getUsername()
+        };
 
-
-
+        vm.logOut = function logOut(){
+            DBService.cleanDB();
+            $state.go('login');
+        };
     }
 })();

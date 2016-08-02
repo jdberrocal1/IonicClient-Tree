@@ -1,8 +1,9 @@
 (function () {
-  var serviceId = 'LoginService';
-  angular
-    .module('app')
-        .service(serviceId, ['SignupService', LoginService]);
+    'use strict';
+    var serviceId = 'LoginService';
+    angular
+        .module('app')
+            .service(serviceId, ['SignupService', LoginService]);
 
     function LoginService (SignupService)
     {
@@ -16,7 +17,7 @@
                   return false;
               }
           });
-      }
+      };
 
     }
 })();

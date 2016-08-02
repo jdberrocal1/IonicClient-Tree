@@ -1,9 +1,10 @@
 
 (function () {
-  var controllerId = 'landsController';
-  angular
-    .module('app')
-        .controller(controllerId, ['$scope','$state',Lands]);
+    'use strict';
+    var controllerId = 'landsController';
+    angular
+        .module('app')
+            .controller(controllerId, ['$scope','$state',Lands]);
 
     function Lands ($scope,$state)
     {
@@ -31,13 +32,13 @@
               },
               points:[]
           }
-
       ];
+      
       vm.loading=false;
 
       vm.goAddLand = function goAddLand(){
           $state.go('tab.land-add');
-      }
+      };
 
     }
 })();

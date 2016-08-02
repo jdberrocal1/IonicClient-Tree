@@ -1,9 +1,10 @@
 
 (function () {
-  var controllerId = 'landController';
-  angular
-    .module('app')
-        .controller(controllerId, ['$scope','$state',Land]);
+    'use strict';
+    var controllerId = 'landController';
+    angular
+        .module('app')
+            .controller(controllerId, ['$scope','$state',Land]);
 
     function Land ($scope,$state)
     {

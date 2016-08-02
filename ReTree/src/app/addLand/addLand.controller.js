@@ -1,9 +1,10 @@
-
 (function () {
-  var controllerId = 'addLandController';
-  angular
-    .module('app')
-        .controller(controllerId, ['$scope','$state','ErrorService','PlacesService','$ionicPopup',AddLand]);
+    'use strict';
+    var controllerId = 'addLandController';
+
+    angular
+        .module('app')
+            .controller(controllerId, ['$scope','$state','ErrorService','PlacesService','$ionicPopup',AddLand]);
 
     function AddLand ($scope,$state,ErrorService,PlacesService,$ionicPopup)
     {
@@ -16,10 +17,10 @@
       };
 
       vm.openMap=function openMap(){
-          var alertPopup = $ionicPopup.alert({
+          $ionicPopup.alert({
               title: 'Alerta!',
               template: 'Esta función aun se encuentra en desarrollo.'
           });
-      }
+      };
     }
 })();

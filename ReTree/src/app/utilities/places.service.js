@@ -1,8 +1,9 @@
 (function () {
+    'use strict';
     var serviceId = 'PlacesService';
-        angular
-            .module('app')
-                .service(serviceId, [PlacesService]);
+    angular
+        .module('app')
+            .service(serviceId, [PlacesService]);
 
     function PlacesService ()
     {
@@ -928,7 +929,7 @@
 
         this.getPlaces = function getPlaces() {
             return places;
-        }
+        };
 
         this.getCantonsByPlaceId = function getCantonsByPlaceId(id) {
             var result;
@@ -940,7 +941,7 @@
             });
 
             return result.cantons;
-        }
+        };
 
         this.getDistrictsByCantonAndPlace = function getDistrictsByCantonAndPlace(placeId, cantonName) {
             var cantons = this.getCantonsByPlaceId(placeId);
@@ -952,6 +953,6 @@
                 }
             });
             return result.districts;
-        }
+        };
     }
 })();
