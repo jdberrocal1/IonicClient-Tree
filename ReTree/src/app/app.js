@@ -3,9 +3,9 @@
 
     angular.module('app', ['ionic','ngCordova','ngMessages']);
 
-    angular.module('app').run(['$ionicPlatform','DBService','$state','CommunicationService',Run]);
+    angular.module('app').run(['$rootScope','$ionicPlatform','DBService','$state','CommunicationService',Run]);
 
-    function Run($ionicPlatform,DBService,$state,CommunicationService) {
+    function Run($rootScope,$ionicPlatform,DBService,$state,CommunicationService) {
         $ionicPlatform.ready(function() {
             DBService.createDB()
               .then(function(result){
@@ -14,10 +14,18 @@
                         var user = result.rows.item(0);
                         if(!angular.isUndefined(user)){
                             CommunicationService.setUsername(user.username);
+                            CommunicationService.setAuthenticated(true);
                             $state.go('tab.lands');
                         }
                     });
               });
+
+          $rootScope.$on('$stateChangeStart', function (event,next, nextParams, fromState) {
+              var isAuthenticated = CommunicationService.isAuthenticated();
+              if(fromState.name !== 'tab.profile' && next.name === 'login' && isAuthenticated){
+                  event.preventDefault();
+              }
+          });
             // if(window.cordova && window.cordova.plugins.Keyboard) {
             //     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             //     // for form inputs)
@@ -31,6 +39,8 @@
             // if(window.StatusBar) {
             //     StatusBar.styleDefault();
             // }
+
+
 
         });
     }

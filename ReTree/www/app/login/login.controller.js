@@ -10,7 +10,10 @@
       var vm = this;
 
       vm.signup = function signup() {
-          vm.credentials={};
+          vm.credentials={
+              username:'',
+              password:''
+          };
           $state.go('signup');
       };
 
@@ -20,6 +23,7 @@
               vm.credentials={};
               DBService.logUser(credentials.username);
               CommunicationService.setUsername(credentials.username);
+              CommunicationService.setAuthenticated(true);
               $state.go('tab.lands');
           }else{
               $ionicPopup.alert({
