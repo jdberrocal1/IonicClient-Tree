@@ -1,5 +1,6 @@
-<ion-view view-title="Lands">
+<ion-view view-title="Lands" cache-view="false">
     <ion-content class="padding">
+        <!--<ion-refresher on-refresh="lands.getLands()"></ion-refresher>-->
         <div class="center lands-title">
             <h2>Fincas</h2>
             <a class="button button-icon icon ion-plus-round" ng-click="lands.goAddLand()"></a>
@@ -24,9 +25,9 @@
                 <img src="img/userDefault.png">
                 <h2 ng-bind="land.name"></h2>
                 <p>
-                    <span ng-bind="land.address.province"></span>,
-                    <span ng-bind="land.address.canton"></span>,
-                    <span ng-bind="land.address.district"></span>.
+                    <span ng-bind="land.address.province.name"></span>,
+                    <span ng-bind="land.address.canton.name"></span>,
+                    <span ng-bind="land.address.district.name"></span>.
                 </p>
             </a>
         </div>

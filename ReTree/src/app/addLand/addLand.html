@@ -24,29 +24,29 @@
                     <div class="input-label">
                         Provincia
                     </div>
-                    <select ng-options="place.name for place in addLand.places" ng-model="addLand.land.place" class="primarySelect" required></select>
+                    <select ng-options="place.name for place in addLand.places" ng-model="addLand.land.address.province" class="primarySelect" required></select>
                 </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
                         Cantón
                     </div>
-                    <select ng-options="canton.name for canton in addLand.land.place.cantons" ng-model="addLand.land.canton" class="primarySelect" required></select>
+                    <select ng-options="canton.name for canton in addLand.land.address.province.cantons" ng-model="addLand.land.address.canton" class="primarySelect" required></select>
                 </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
                         Distrito
                     </div>
-                     <select ng-options="district.name for district in addLand.land.canton.districts" ng-model="addLand.land.district" class="primarySelect" required></select>
+                     <select ng-options="district.name for district in addLand.land.address.canton.districts" ng-model="addLand.land.address.district" class="primarySelect" required></select>
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Otras Señas</span>
-                    <input type="text" name="address" ng-model="addLand.land.address" class="primaryInput">
+                    <input type="text" name="address" ng-model="addLand.land.address.direction" class="primaryInput">
                 </label>
                 <div class="item center">
                     <img src="img/map.png" alt="Map" ng-click="addLand.openMap()"/>
                 </div>
             <button class="primaryButton" ng-disabled="addLandForm.$invalid"
-            ng-class="{ 'disabled' : addLandForm.$invalid}">
+            ng-class="{ 'disabled' : addLandForm.$invalid}" ng-click="addLand.saveLand()">
                 Guardar
             </button>
         </form>

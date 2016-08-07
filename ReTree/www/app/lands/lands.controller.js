@@ -4,41 +4,25 @@
     var controllerId = 'landsController';
     angular
         .module('app')
-            .controller(controllerId, ['$scope','$state',Lands]);
+            .controller(controllerId, ['$scope','$state','AddLandService','CommunicationService','$ionicLoading',Lands]);
 
-    function Lands ($scope,$state)
+    function Lands ($scope,$state,AddLandService,CommunicationService,$ionicLoading)
     {
       var vm = this;
-      vm.lands=[
-          {
-              id:1,
-              name:"La Ponderosa",
-              address:{
-                  province:'Alajuela',
-                  canton: 'San Carlos',
-                  district: 'Cutris',
-                  direction: 'San Joaquin, 1Km Norte de la escuela'
-              },
-              points:[]
-          },
-          {
-              id:2,
-              name:"La Dolores",
-              address:{
-                  province:'Alajuela',
-                  canton: 'Los Chiles',
-                  district: 'Amparo',
-                  direction: 'Las Nubes, 15Km Este del Pavón'
-              },
-              points:[]
-          }
-      ];
-      
+      vm.lands=[];
       vm.loading=false;
+
+      vm.getLands = function getLands(){
+          vm.lands = AddLandService.getLandsByUserName(CommunicationService.getUsername());
+          //$ionicLoading.hide();
+      };
 
       vm.goAddLand = function goAddLand(){
           $state.go('tab.land-add');
       };
+
+      //$ionicLoading.show();
+      vm.getLands();
 
     }
 })();
