@@ -38,10 +38,11 @@
       };
 
       vm.openMap=function openMap(){
-          $ionicPopup.alert({
-              title: 'Alerta!',
-              template: 'Esta función aun se encuentra en desarrollo.'
-          });
+          $state.go('tab.map');
+        //   $ionicPopup.alert({
+        //       title: 'Alerta!',
+        //       template: 'Esta función aun se encuentra en desarrollo.'
+        //   });
       };
     }
 })();

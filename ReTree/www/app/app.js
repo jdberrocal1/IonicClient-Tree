@@ -106,30 +106,18 @@
                         controllerAs:'profile'
                     }
                 }
+            })
+            .state('tab.map', {
+                url: '/map',
+                views: {
+                    'lands': {
+                        templateUrl: 'app/map/map.html',
+                        controller: 'mapController',
+                        controllerAs:'map'
+                    }
+                }
             });
-          /*.state('app.users', {
-            url: '/users',
-            views: {
-              'menuContent': {
-                templateUrl: 'app/users/userList.html',
-                controller: 'userListController',
-                controllerAs:'userList'
-              }
-            }
-          })
-          .state('app.user', {
-            url: "/users/user/:id",
-            views: {
-              'menuContent': {
-                templateUrl: 'app/users/user.html',
-                controller: 'userController',
-                controllerAs: 'user'
-              }
-            },
-            data: {
-              authorizedRoles: [USER_ROLES.admin]
-            }
-        });*/
+
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/login');
     }

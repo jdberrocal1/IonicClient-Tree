@@ -14,20 +14,22 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="lib/angular-messages/angular-messages.js"></script>
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <!-- inject:js -->
     <script src="app/app.js"></script>
-    <script src="app/dashboard/dashboard.controller.js"></script>
     <script src="app/addLand/addLand.controller.js"></script>
     <script src="app/addLand/addLand.service.js"></script>
+    <script src="app/dashboard/dashboard.controller.js"></script>
     <script src="app/errors/errors.service.js"></script>
     <script src="app/land/land.controller.js"></script>
     <script src="app/lands/lands.controller.js"></script>
     <script src="app/login/login.controller.js"></script>
     <script src="app/login/login.service.js"></script>
+    <script src="app/map/map.controller.js"></script>
     <script src="app/profile/profile.controller.js"></script>
     <script src="app/signup/signup.controller.js"></script>
     <script src="app/signup/signup.service.js"></script>
@@ -35,6 +37,8 @@
     <script src="app/utilities/db.service.js"></script>
     <script src="app/utilities/places.service.js"></script>
     <!-- endinject -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
 
   </head>
   <body ng-app="app">

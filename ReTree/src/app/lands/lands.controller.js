@@ -23,6 +23,5 @@
 
       //$ionicLoading.show();
       vm.getLands();
-
     }
 })();

@@ -8,6 +8,7 @@ Retree is a mobile app for manage and incentivize the reforestation.
 ## Plugings Used
 
 [$cordovaSQLite](http://ngcordova.com/docs/plugins/sqlite/)
+[Geolocation](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/)
 
 
 
